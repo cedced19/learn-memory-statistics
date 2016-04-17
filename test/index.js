@@ -12,7 +12,6 @@ describe('Test receving statisctics from a list of lessons', function () {
   });
 
   it('should give statisctics for a list of lessons', function () {
-    var t = require('../')(data);
-    console.log(t);
+    //console.log(require('../')(data));
   });
 });
