@@ -9,10 +9,10 @@ describe('Test sort-by-year function', function () {
     var output = sortByYear([{createdAt: '2014-11-16T12:39:56.617Z', id: 1}, {createdAt: '2016-04-14T09:08:17.242Z', id: 2}]);
     expect(output[2014]).to.be.an('array');
     expect(output[2014][0]).to.be.an('object');
-    assert.equal(output[2014][0], 1, 'should have the id');
+    assert.equal(output[2014][0].id, 1, 'should have the id');
     expect(output[2016]).to.be.an('array');
     expect(output[2016][0]).to.be.an('object');
-    assert.equal(output[2016][0], 2, 'should have the id');
+    assert.equal(output[2016][0].id, 2, 'should have the id');
   });
 
 });
