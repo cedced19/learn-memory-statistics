@@ -16,6 +16,6 @@ var request = require('request');
 
 request('https://cedced19.github.io/learn-memory-static/data.json', function (error, response, body) {
         var data = JSON.parse(body);
-	      console.log(statistics(data));
+	console.log(statistics(data));
 });
 ```
